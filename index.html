@@ -8,6 +8,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="wrapper">
+        <div class="background"></div>
+        <div class="logo">The Site</div>
+        <div class="welcome">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ducimus reiciendis. Similique ullam recusandae eius veniam placeat rem laboriosam ut quasi. Numquam ducimus eum excepturi ipsam debitis fugiat dolores exercitationem!</div>
+        <div class="form">
+            <form action="">
+                <div class="first-name form-row">
+                    <label for="first-name">FIRST NAME:</label>
+                    <input type="text" name="first-name" id="first-name" required>
+                </div>
+                <div class="last-name form-row">
+                    <label for="last-name">LAST NAME:</label>
+                    <input type="text" name="last-name" id="last-name" required>
+                </div>
+                <div class="email form-row">
+                    <label for="email">EMAIL:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="phone form-row">
+                    <label for="phone">PHONE NUMBER:</label>
+                    <input type="text" name="phone" id="phone" inputmode="numeric" required>
+                </div>
+                <div class="password form-row">
+                    <label for="password">PASSWORD:</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div class="confirm form-row">
+                    <label for="confirm">CONFIRM PASSWORD:</label>
+                    <input type="password" name="password2" id="confirm"> <!-- Need to fix confirmation -->
+                </div>
+                <button type="submit">CREATE ACCOUNT</button>
+            </form>
+        </div>
+        <div class="login">
+            <span>Already have an account? <a href="">Log in</a></span>
+        </div>
+    </div>
 </body>
 </html>
