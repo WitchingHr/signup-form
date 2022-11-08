@@ -56,8 +56,10 @@ input[type='email'] {
     margin-bottom: 1rem;
     border: none;
     border-radius: 5px;
-    background-color: rgb(128, 118, 96);
-    box-shadow: inset 0px 0px 20px 4px #8784ff;
+    background-color: rgb(86 84 82);
+    box-shadow: inset 0px 0px 3px 1px #7472af;
+    color: white;
+    padding: 0 1rem;
 }
 
 button[type='submit'] {
@@ -66,4 +68,8 @@ button[type='submit'] {
     padding: 1rem 3rem;
     border-radius: 5px;
     background: linear-gradient(red, yellow);
+}
+
+::placeholder {
+    color: rgb(239, 242, 255);
 }
