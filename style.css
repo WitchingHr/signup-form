@@ -111,12 +111,28 @@ a {
     width: auto;
 }
 
-/* @media only screen and (orientation: landscape) {
+@media only screen and (orientation: landscape) and (max-height: 512px) {
+    .wrapper {
+        height: 100%;
+        flex-direction: row;
+        width: 100vw;
+    }
+    .background {
+        position: sticky;
+        width: 100%;
+        flex: 0 1 auto;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+
     .logo {
         margin: 1rem 0;
         bottom: 0;
     }
-} */
+}
 
 @media only screen and (min-width: 768px) {
     .wrapper {
@@ -125,7 +141,6 @@ a {
     }
     
     .background {
-        height: 100%;
         flex: 0 1 auto;
     }
     
@@ -134,8 +149,18 @@ a {
     }
 
     .logo {
-        margin: 1rem 0;
+        margin: 2rem 0;
         bottom: 0;
+    }
+
+    input[type='text'],
+    input[type='password'],
+    input[type='email'] {
+        margin-bottom: 2rem;
+    }
+
+    button[type='submit'] {
+        margin-bottom: 1.5rem;
     }
 
     .footer {
