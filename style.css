@@ -24,6 +24,7 @@ body {
     min-width: 250px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .background {
@@ -146,22 +147,18 @@ a.git {
     color: #585858;
 }
 
-@media only screen and (orientation: landscape) and (max-height: 512px) {
+@media only screen and (orientation: landscape) and (max-height: 540px) {
     .wrapper {
         height: 100%;
         flex-direction: row;
         width: 100vw;
-    }
-    .background {
-        position: sticky;
-        width: 100%;
-        flex: 0 1 auto;
     }
 
     img {
         height: 100%;
         width: 100%;
     }
+
 
     .logo {
         margin: 1rem 0;
@@ -178,7 +175,6 @@ a.git {
     .wrapper {
         flex-direction: row;
         width: 100vw;
-        overflow: hidden;
     }
     
     .background {
