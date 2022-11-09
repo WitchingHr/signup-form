@@ -98,6 +98,18 @@ a {
     color: orange;
 }
 
+.footer {
+    font-size: 1.5rem;
+    color: #585858;
+}
+
+.git {
+    position: relative;
+    top: 5px;
+    height: 2rem;
+    width: auto;
+}
+
 @media only screen and (orientation: landscape) {
     .logo {
         margin: 1rem 0;
