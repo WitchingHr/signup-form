@@ -46,7 +46,7 @@ img {
 
 .welcome {
     color: white;
-    font-size: min(4vw, max(16px));
+    font-size: min(4vw, max(14px));
     padding: 0 2rem;
     text-align: center;
     margin-bottom: 3rem;
@@ -74,14 +74,27 @@ input[type='email'] {
     box-shadow: inset 0px 0px 3px 1px #7472af;
     color: white;
     padding: 0 1rem;
+    caret-color: white;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px rgb(86 84 82) inset !important;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: rgb(255, 255, 255);
 }
 
 button[type='submit'] {
     display: block;
     margin: 1rem auto;
     padding: 1rem 3rem;
+    border: none;
     border-radius: 5px;
-    background: linear-gradient(red, yellow);
+    background: linear-gradient(orange, darkorange);
     cursor: pointer;
 }
 
@@ -97,6 +110,9 @@ button[type='submit'] {
 
 a {
     text-decoration: none;
+}
+
+a.login-link {
     color: orange;
 }
 
@@ -109,11 +125,8 @@ a:hover {
     color: #585858;
 }
 
-.git {
-    position: relative;
-    top: 5px;
-    height: 2rem;
-    width: auto;
+a.git {
+    color: #585858;
 }
 
 @media only screen and (orientation: landscape) and (max-height: 512px) {
@@ -143,6 +156,7 @@ a:hover {
     .wrapper {
         flex-direction: row;
         width: 100vw;
+        overflow: hidden;
     }
     
     .background {
