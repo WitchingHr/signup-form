@@ -46,6 +46,7 @@ img {
 
 .welcome {
     color: white;
+    font-size: min(4vw, max(16px));
     padding: 0 2rem;
     text-align: center;
     margin-bottom: 3rem;
@@ -55,7 +56,7 @@ img {
 .form-row {
     display: flex;
     flex-direction: column;
-    width: min(80vw, 400px);
+    width: min(80vw, 290px);
 }
 
 label {
@@ -97,6 +98,10 @@ button[type='submit'] {
 a {
     text-decoration: none;
     color: orange;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .footer {
@@ -151,6 +156,14 @@ a {
     .logo {
         margin: 2rem 0;
         bottom: 0;
+    }
+
+    form {
+        width: 290px;
+    }
+
+    .form-row {
+        width: 100%;
     }
 
     input[type='text'],
