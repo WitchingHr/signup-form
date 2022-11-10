@@ -94,7 +94,6 @@ input[type='email'] {
 
 input.invalid {
     border: 1px solid rgb(184, 1, 1);
-    box-shadow: 0 0 3px 1px rgb(184, 1, 1);
 }
 
 input:-webkit-autofill,
@@ -102,6 +101,7 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus, 
 input:-webkit-autofill:active{
     -webkit-box-shadow: 0 0 0 30px rgb(86 84 82) inset !important;
+    box-shadow: 0 0 0 30px rgb(86 84 82) inset !important;
 }
 
 input:-webkit-autofill {

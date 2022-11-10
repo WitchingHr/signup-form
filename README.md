@@ -9,9 +9,9 @@ After the page skeleton was in place, elements were styled to the point where th
 
 Next, media rules were added to the stylesheet to query the screen size so that a proper desktop layout could be constructed. This was also a first for me. Flex rules were changed to create the desktop orientation.
 
-Once that was done, more media rules were applied to fix any unwanted mobile landscape layouts where content was cut off or overflowing. This was a huge learning moment for me. A lot of tinkering was done to get things right.
+Once that was done, more media rules were applied to fix any unwanted mobile landscape layouts where content was cut off or overflowing. Then the page was polished with various CSS styles.
 
-Lastly, the page was polished with various CSS styles.
+When the styling was complete, eventlisteners were implemented with custom validity functions to make sure users can't submit the form without a matching confirmation password.
 
 ## Lessons learned
 
@@ -23,6 +23,8 @@ Lastly, the page was polished with various CSS styles.
  - Using JS to add CSS attributes on :invalid inputs after form submission
  - Adding @media rules to CSS to create desktop and various mobile layouts
  - Overriding default browser styles (ie: autofill)
+ - Creating custom validity functions to check for password mismatch
+ - Utilizing RegEx to create pattern validation on input values
 
 ## Image
 Picture of Earth is Free to Use under the Creative Commons Zero license and can be found at https://www.pexels.com/photo/planet-earth-220201/

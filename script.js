@@ -47,3 +47,12 @@ const error = document.querySelector('.password_error');
 error.addEventListener('animationend', () => {
     error.classList.remove('shake');
 })
+
+const phone = document.getElementById('phone');
+phone.addEventListener('input', () => {
+    if (phone.value.length === 3) {
+        phone.value += '-'
+    } else if (phone.value.length === 7) {
+        phone.value += '-'
+    }
+})
