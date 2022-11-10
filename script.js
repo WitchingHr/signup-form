@@ -48,11 +48,20 @@ error.addEventListener('animationend', () => {
     error.classList.remove('shake');
 })
 
-const phone = document.getElementById('phone');
-phone.addEventListener('input', () => {
-    if (phone.value.length === 3) {
-        phone.value += '-'
-    } else if (phone.value.length === 7) {
-        phone.value += '-'
+function addDashes(num, event) {
+    num = num.replace(/[^\d]/g, '');
+    if (num.length > 3) {
+        num = insert(num, 3, '-');
+        if (num.length > 7) {
+            num = insert(num, 7, '-');
+            if (num.length > 13) {
+                num = insert(num, 13, '-');
+            }
+        }
     }
-})
+    return num;
+}
+
+function insert(string1, index, string2) {
+    return string1.substring(0, index) + string2 + string1.substring(index);
+}
