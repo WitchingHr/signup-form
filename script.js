@@ -23,6 +23,12 @@ button.addEventListener('click', () => {
     document.querySelector('.password_error').classList.add('shake');
 })
 
+window.addEventListener('keydown', (e) => {
+    if (e.code === 'Enter') {
+        document.querySelector('.password_error').classList.add('shake');
+    }
+})
+
 const error = document.querySelector('.password_error');
 error.addEventListener('animationend', () => {
     error.classList.remove('shake');
