@@ -28,3 +28,4 @@ When the styling was complete, eventlisteners were implemented with custom valid
 
 ## Image
 Picture of Earth is Free to Use under the Creative Commons Zero license and can be found at https://www.pexels.com/photo/planet-earth-220201/
+Credit to [@pixabay](https://www.pexels.com/@pixabay/)
