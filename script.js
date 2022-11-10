@@ -9,13 +9,27 @@ submit.addEventListener('click', () => {
 function checkMatch() {
     const password = document.getElementById('password').value;
     const confirm = document.getElementById('confirm').value;
+    const passInput = document.getElementById('password');
+    const confInput = document.getElementById('confirm');
     if (confirm !== password) {
-        // document.querySelector('button').disabled = true;
         document.querySelector('.password_error').style.opacity = 1
+        passInput.setCustomValidity('Password mismatch');
+        confInput.setCustomValidity('Password mismatch');
     } else {
-        // document.querySelector('button').disabled = false;
         document.querySelector('.password_error').style.opacity = 0
+        passInput.setCustomValidity('');
+        confInput.setCustomValidity('');
     }
+    button.addEventListener('click', () => {
+        passInput.reportValidity();
+        confInput.reportValidity();
+    });
+    window.addEventListener('keydown', (e) => {
+        if (e.code === 'Enter') {
+            passInput.reportValidity();
+            confInput.reportValidity();
+        }
+    })
 }
 
 const button = document.querySelector('button');
