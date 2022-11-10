@@ -18,3 +18,7 @@ function checkMatch() {
     }
 }
 
+const button = document.querySelector('button');
+button.addEventListener('click', () => {
+    document.querySelector('.password_error').classList.add('shake');
+})
