@@ -1,4 +1,5 @@
 # Sign up form
+<img width="1470" alt="signup" src="https://user-images.githubusercontent.com/41353202/201428239-3fe9e980-82d9-4791-a1f6-6f71a766a0d6.png">
 
 ## Abstract
 Mock up sign up page created while learning about forms. This is the first page I've designed using the **Mobile First** philosophy. 
